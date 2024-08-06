@@ -1,0 +1,22 @@
+1. “C:\Windows\System32\drivers\etc” 의 hosts 파일을 수정 (스크린샷 참조)
+```
+	172.65.229.74 mc.hypixel.net
+```
+
+2. 설치 설정 수정
+* 설정 더보기
+* JVM 인수 마지막으로 이동
+```
+-Dsun.net.inetaddr.ttl=0
+```
+3. 복사후 JVM 인수 끝에 붙여넣기 ** 중요!! 공백이 있어야함 **
+* 저장
+
+4. DNS flush
+명령 프롬프트를 관리자 권한으로 실행후 아래 스크립트 실행
+  ```
+ 	 ipconfig /flushdns
+  ```
+5. minecraft 실행 후 핑이 이상한지 확인
+
+  https://drive.google.com/drive/folders/12B-ZbScLLJAfrllR5yryt9AlzZ3fNKVI?usp=drive_link
